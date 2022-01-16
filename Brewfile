@@ -5,6 +5,8 @@ tap "homebrew/core"
 tap "homebrew/services"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Python code formatter
+brew "black", restart_service: true
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
 # Distributed revision control system
@@ -15,6 +17,8 @@ brew "go"
 brew "openjdk"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
+# Improved top (interactive process viewer)
+brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Configurable static site generator
@@ -37,8 +41,16 @@ brew "python@3.9"
 brew "ruby"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Opinionated Lua code formatter
+brew "stylua"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Internet file retriever
+brew "wget"
 cask "font-fira-code-nerd-font"
 cask "font-space-mono-nerd-font"
 cask "font-ubuntu-mono-nerd-font"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
