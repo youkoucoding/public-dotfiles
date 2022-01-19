@@ -52,6 +52,8 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use "lewis6991/impatient.nvim"
+  use "akinsho/toggleterm.nvim"
+  use "ahmedkhalf/project.nvim"
   use "lukas-reineke/indent-blankline.nvim"
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
@@ -60,6 +62,8 @@ return packer.startup(function(use)
   -- Colorschemes
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "folke/tokyonight.nvim"
+  use "marko-cerovac/material.nvim"
+  use "rebelot/kanagawa.nvim"
   -- use "lunarvim/darkplus.nvim"
 
   -- cmp plugins

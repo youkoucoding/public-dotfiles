@@ -144,10 +144,20 @@ _G.packer_plugins = {
     path = "/Users/youkou/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/Users/youkou/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/youkou/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "/Users/youkou/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,
