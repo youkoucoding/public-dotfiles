@@ -38,7 +38,7 @@ packer.init {
   },
 }
 
--- Install your plugins here
+-- Install plugins here
 return packer.startup(function(use)
   -- My plugins here
   use "wbthomason/packer.nvim" -- Have packer manage itself
@@ -96,6 +96,9 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+
+  -- Markdown preview
+  use {'iamcco/markdown-preview.nvim', ft = 'markdown', run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

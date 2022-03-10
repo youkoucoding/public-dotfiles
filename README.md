@@ -36,3 +36,10 @@ brew bundle --file ~/.dotfiles/Brewfile
 # ...or move to the directory first.
 cd ~/.dotfiles && brew bundle
 ```
+
+
+## Caveat
+
+Iterm2 scroll issue
+
+[iTerm2 tmux mouse scrolling issue | imagineer | Praseetha KR](https://imagineer.in/blog/iterm2-tmux-mouse-scrolling-issue/)
