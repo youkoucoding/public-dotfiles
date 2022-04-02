@@ -53,4 +53,4 @@ cask "font-fira-code-nerd-font"
 cask "font-space-mono-nerd-font"
 cask "font-ubuntu-mono-nerd-font"
 # Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
+cask "wezterm"

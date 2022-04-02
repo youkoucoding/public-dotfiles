@@ -1,11 +1,13 @@
 vim.cmd([[
  try
-   colorscheme tomorrow 
+   colorscheme kanagawa 
  catch /^Vim\%((\a\+)\)\=:E185/
    colorscheme default
    set background=dark
  endtry
  ]])
+
+require("leaf").setup({theme = "dark"})
 
 -- local default_colors = require("kanagawa.colors").setup()
 --

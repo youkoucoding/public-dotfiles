@@ -64,6 +64,7 @@ return packer.startup(function(use)
   use "folke/tokyonight.nvim"
   use "marko-cerovac/material.nvim"
   use "rebelot/kanagawa.nvim"
+  use "daschw/leaf.nvim"
   -- use "lunarvim/darkplus.nvim"
 
   -- cmp plugins
