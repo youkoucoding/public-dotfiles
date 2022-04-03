@@ -51,7 +51,7 @@ format = "via [⚙️ $version](red bold)"
 
 [localip]
 ssh_only = false
-format = "@[$localipv4](bold red) "
+format = "@[$localipv4](bold #0057B8) "
 disabled = false
 
 [lua]
@@ -61,4 +61,4 @@ format = "via [🌕 $version](bold blue) "
 disabled = false
 threshold = -1
 symbol = " "
-style = "bold dimmed green"
+style = "bold #FFD700"

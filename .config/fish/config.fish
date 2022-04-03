@@ -7,6 +7,7 @@ fish_add_path /usr/local/opt/openjdk/bin
 
 set -gx TERM xterm-256color
 set -gx EDITOR nvim
+set -gx SHELL /usr/local/bin/fish
 
 # theme
 set -g theme_color_scheme terminal-dark

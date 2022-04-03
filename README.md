@@ -37,6 +37,12 @@ brew bundle --file ~/.dotfiles/Brewfile
 cd ~/.dotfiles && brew bundle
 ```
 
+---
+
+# update Brewfile
+```bash
+brew bundle dump --describe -f
+```
 
 ## Caveat
 

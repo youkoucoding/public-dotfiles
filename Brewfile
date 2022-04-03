@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "wez/wezterm"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Python code formatter
@@ -27,6 +28,10 @@ brew "hugo"
 brew "lsd"
 # Java-based project management
 brew "maven"
+# Node version management
+brew "n"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP/2 C Library
@@ -36,7 +41,7 @@ brew "nmap"
 # Platform built on V8 to build network applications
 brew "node", link: false
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
+brew "python@3.10"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Cross-shell prompt for astronauts
@@ -49,8 +54,23 @@ brew "tmux"
 brew "tree"
 # Internet file retriever
 brew "wget"
+# JavaScript package manager
+brew "yarn"
+# Application launcher and productivity software
+cask "alfred"
+# Tool to list all active shortcuts of the current application
+cask "cheatsheet"
+# Web browser
+cask "firefox"
 cask "font-fira-code-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-roboto-mono-nerd-font"
 cask "font-space-mono-nerd-font"
 cask "font-ubuntu-mono-nerd-font"
-# Terminal emulator as alternative to Apple's Terminal app
+cask "font-ubuntu-nerd-font"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# Open-source code editor
+cask "visual-studio-code"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
