@@ -27,6 +27,7 @@ alias vim nvim
 alias gs "git status"
 alias gl "git log --oneline --graph --decorate=full"
 alias gd "git diff --color-words"
+alias gad "git diff --staged --color-words"
 alias gc "git commit"
 alias ga "git add ."
 alias gp "git push"
