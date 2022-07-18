@@ -17,7 +17,8 @@ return {
 	window_background_opacity = 0.99,
 
 	-- Font configuration
-	font = wezterm.font("JetBrains Mono", { weight = "Medium" }),
+	-- font = wezterm.font("JetBrains Mono", { weight = "Medium" }),
+	font = wezterm.font("Dank mono"),
 	font_size = 18.2,
 
 	-- Disable ligatures
