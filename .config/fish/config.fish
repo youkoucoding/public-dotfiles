@@ -33,16 +33,22 @@ alias ga "git add ."
 alias gp "git push"
 alias nn "npm"
 alias y "yarn"
-alias cdcoding "cd $HOME/code/"
-alias cdfrontend "cd $HOME/code/frontend/"
-alias cddotfiles "cd $HOME/code/miscellaneous/repos/public-dotfiles/"
-alias cdblog "cd $HOME/code/frontend/1_frontend_repos/youkoucoding.github.io/"
-alias cdplay "cd $HOME/code/playground/"
+
 alias code "code ."
 alias open "open ."
 alias vimfish "nvim $HOME/.config/fish/config.fish"
 alias vimpersonal_config "nvim $HOME/Documents/personal_configuration"
 alias sourcefish "source $HOME/.config/fish/config.fish"
+
+# personal mac
+alias cdcode "cd $HOME/code/"
+alias cdfrontend "cd $HOME/code/frontend/"
+alias cddotfiles "cd $HOME/code/miscellaneous/repos/public-dotfiles/"
+alias cdblog "cd $HOME/code/frontend/1_frontend_repos/youkoucoding.github.io/"
+alias cdplay "cd $HOME/code/playground/"
+
+# work mac
+alias cdwork "cd $HOME/workspace"
 
 # golang configuration
 set -x GOPATH $HOME/coding/go
