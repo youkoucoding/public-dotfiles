@@ -62,10 +62,3 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- colorscheme material fast style switching
 keymap("n", "<A-m>", "<Cmd>lua require('material.functions').toggle_style()<CR>", opts)
-
--- Terminal --
--- Better terminal navigation
--- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)

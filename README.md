@@ -49,3 +49,5 @@ brew bundle dump --describe -f
 Iterm2 scroll issue
 
 [iTerm2 tmux mouse scrolling issue | imagineer | Praseetha KR](https://imagineer.in/blog/iterm2-tmux-mouse-scrolling-issue/)
+
+> [LunarVim/Neovim-from-scratch: A Neovim config designed from scratch to be understandable](https://github.com/LunarVim/Neovim-from-scratch)
