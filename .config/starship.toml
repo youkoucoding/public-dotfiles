@@ -19,12 +19,12 @@ error_symbol = "[✗](bold red) "
 tag_disabled = true
 only_detached = false
 disabled = false
-commit_hash_length = 6
+commit_hash_length = 10
 tag_symbol = "🔖 "
 
 [git_branch]
 symbol = "🌱 "
-truncation_length = 10
+truncation_length = 20
 truncation_symbol = "..."
 
 [git_state]

@@ -22,7 +22,6 @@ alias ls "lsd"
 alias la "lsd -A"
 alias ll "lsd -lah"
 alias g git
-alias y yarn
 alias vim nvim
 alias gs "git status"
 alias gl "git log --oneline --graph --decorate=full"
@@ -33,19 +32,16 @@ alias ga "git add ."
 alias gp "git push"
 alias nn "npm"
 alias y "yarn"
+alias p "pnpm"
+alias ".." "cd ../" 
+alias "..." "cd ../../" 
+alias z zellij 
 
 alias code "code ."
 alias open "open ."
 alias vimfish "nvim $HOME/.config/fish/config.fish"
 alias vimpersonal_config "nvim $HOME/Documents/personal_configuration"
 alias sourcefish "source $HOME/.config/fish/config.fish"
-
-# personal mac
-alias cdcode "cd $HOME/code/"
-alias cdfrontend "cd $HOME/code/frontend/"
-alias cddotfiles "cd $HOME/code/miscellaneous/repos/public-dotfiles/"
-alias cdblog "cd $HOME/code/frontend/1_frontend_repos/youkoucoding.github.io/"
-alias cdplay "cd $HOME/code/playground/"
 
 # work mac
 alias cdwork "cd $HOME/workspace"
