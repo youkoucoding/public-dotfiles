@@ -10,10 +10,10 @@ style = "blue bold"
 threshold = 10
 style = "bold red"
 
-[character]
-vicmd_symbol = '[\[I\]❯](bold green)'
-success_symbol = "[➜](bold green) "
-error_symbol = "[✗](bold red) "
+# [character]
+# vicmd_symbol = '[\[I\]❯](bold green)'
+# success_symbol = "[➜](bold green) "
+# error_symbol = "[✗](bold red) "
 
 [git_commit]
 tag_disabled = true
