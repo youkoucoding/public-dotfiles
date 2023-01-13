@@ -25,6 +25,7 @@ alias g git
 alias vim nvim
 alias gs "git status"
 alias gl "git log --oneline --graph --decorate=full"
+alias glc "git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all --decorate=full"
 alias gd "git diff --color-words"
 alias gad "git diff --staged --color-words"
 alias gc "git commit"
@@ -55,3 +56,7 @@ set PATH $HOME/.cargo/bin $PATH
 
 # starship
 starship init fish | source
+
+minikube -p minikube docker-env | source
+
+
