@@ -19,7 +19,7 @@ git clone https://github.com/youkoucoding/public-dotfiles.git
 3. Create symlinks in the Home directory to the real files in the repo.
 
 ```bash
-ln -s ~/.public-dotfiles/ ~/
+ln -s $(pwd)/public-dotfiles/ ~/.config
 ```
 
 4. Install Homebrew, followed by the software listed in the Brewfile.
