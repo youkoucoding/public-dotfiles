@@ -56,7 +56,3 @@ set PATH $HOME/.cargo/bin $PATH
 
 # starship
 starship init fish | source
-
-minikube -p minikube docker-env | source
-
-
