@@ -58,7 +58,7 @@ disabled = false
 format = "via [🌕 $version](bold blue) "
 
 [memory_usage]
-disabled = false
+disabled = true
 threshold = -1
 symbol = " "
 style = "bold #FFD700"
