@@ -52,6 +52,7 @@ set -x GOPATH $HOME/coding/go
 set -x GOROOT /usr/local/opt/go/libexec
 set -x PATH $PATH:$GOPATH/bin
 set -x PATH $PATH:$GOROOT/bin
+set -x PATH $HOME/.local/bin/ $PATH
 set PATH $HOME/.cargo/bin $PATH
 
 # starship
