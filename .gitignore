@@ -45,9 +45,6 @@ Temporary Items
 # Built Visual Studio Code Extensions
 *.vsix
 
-plugin/
-packer_compiled.lua
-
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
