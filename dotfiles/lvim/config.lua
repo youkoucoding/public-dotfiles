@@ -11,8 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save.enabled = true
-lvim.colorscheme = "material"
-lvim.material_style = "oceanic"
+lvim.colorscheme = "kanagawa"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -173,6 +172,9 @@ linters.setup {
 --     },
 -- }
 lvim.plugins = {
+  {
+    "rebelot/kanagawa.nvim"
+  },
   {
     "marko-cerovac/material.nvim",
     config = function()
