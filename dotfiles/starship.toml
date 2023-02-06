@@ -3,7 +3,7 @@ format = '$all$directory$character'
 [azure]
 disabled = false
 format = "on [$symbol($subscription)]($style) "
-symbol = "☁️ "
+symbol = "ﴃ "
 style = "blue bold"
 
 [[battery.display]]
@@ -62,3 +62,8 @@ disabled = true
 threshold = -1
 symbol = " "
 style = "bold #FFD700"
+
+# ~/.config/starship.toml
+
+[terraform]
+format = '[🏎 $version$workspace]($style) '
