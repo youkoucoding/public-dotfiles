@@ -66,4 +66,14 @@ style = "bold #FFD700"
 # ~/.config/starship.toml
 
 [terraform]
-format = '[🏎 $version$workspace]($style) '
+format = "via [$symbol $workspace]($style) "
+symbol = "💠"
+style = "bold 105"
+
+[time]
+disabled = false
+format = '[\[$time\]]($style) '
+user_12hr = true
+time_format = '%R'
+utc_time_offset = '+9'
+
