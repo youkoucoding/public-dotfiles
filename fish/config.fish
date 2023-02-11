@@ -37,6 +37,7 @@ alias p "pnpm"
 alias ".." "cd ../" 
 alias "..." "cd ../../" 
 alias z zellij 
+alias tf terraform 
 
 alias code "code ."
 alias open "open ."
