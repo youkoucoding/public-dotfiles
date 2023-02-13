@@ -17,10 +17,17 @@ set -g theme_hide_hostname no
 set -g theme_hostname always
 
 # aliases
-alias cat bat
 alias ls "lsd"
 alias la "lsd -A"
 alias ll "lsd -lah"
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias h='history'
+alias j='jobs -l'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
 alias g git
 alias vim nvim
 alias gs "git status"
