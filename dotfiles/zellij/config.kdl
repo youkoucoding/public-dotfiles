@@ -186,6 +186,12 @@ plugins {
 //
 // simplified_ui true
 
+ui {
+    pane_frames {
+        rounded_corners true
+    }
+}
+
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 //
@@ -196,7 +202,7 @@ default_shell "fish"
 //   - true (default)
 //   - false
 //
-// pane_frames true
+pane_frames false
 
 // Define color themes for Zellij
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
@@ -230,12 +236,26 @@ themes {
         white "#d3c6aa"
         orange "#FF9E64"
     }
+
+    catppuccin-mocha {
+        bg "#585b70" // Surface2
+        fg "#cdd6f4"
+        red "#f38ba8"
+        green "#a6e3a1"
+        blue "#89b4fa"
+        yellow "#f9e2af"
+        magenta "#f5c2e7" // Pink
+        orange "#fab387" // Peach
+        cyan "#89dceb" // Sky
+        black "#181825" // Mantle
+        white "#cdd6f4"
+    }
 }
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "everforest-dark"
+theme "catppuccin-mocha"
 
 // The name of the default layout to load on startup
 // Default: "default"
