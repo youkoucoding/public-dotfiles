@@ -19,7 +19,7 @@ style = "bold red"
 tag_disabled = true
 only_detached = false
 disabled = false
-commit_hash_length = 10
+commit_hash_length = 8
 tag_symbol = "🔖 "
 
 [git_branch]
