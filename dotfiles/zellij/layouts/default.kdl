@@ -6,7 +6,6 @@ layout {
         pane size="65%"
         pane split_direction="horizontal" {
             pane
-            pane
         }
     }
     pane size=2 borderless=true {
