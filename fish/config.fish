@@ -20,14 +20,14 @@ set -g theme_hostname always
 alias ls "lsd"
 alias la "lsd -A"
 alias ll "lsd -lah"
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias h='history'
-alias j='jobs -l'
-alias mv='mv -i'
-alias cp='cp -i'
-alias ln='ln -i'
+alias grep 'grep --color=auto'
+alias egrep 'egrep --color=auto'
+alias fgrep 'fgrep --color=auto'
+alias h 'history'
+alias j 'jobs -l'
+alias mv 'mv -i'
+alias cp 'cp -i'
+alias ln 'ln -i'
 alias g git
 alias vim nvim
 alias gs "git status"
@@ -45,12 +45,23 @@ alias ".." "cd ../"
 alias "..." "cd ../../" 
 alias z zellij 
 alias tf terraform 
+alias lv lvim
 
 alias code "code ."
 alias open "open ."
 alias vimfish "nvim $HOME/.config/fish/config.fish"
 alias vimpersonal_config "nvim $HOME/Documents/personal_configuration"
 alias sourcefish "source $HOME/.config/fish/config.fish"
+
+# get web servers headers
+alias header "curl -I"
+# find out if remote server supports gzip / mod_deflate or not
+alias headerc 'curl -I --compressed'
+
+# docker
+
+alias dkrmi "docker rmi"
+alias dk "docker images"
 
 # work mac
 alias cdwork "cd $HOME/workspace"
