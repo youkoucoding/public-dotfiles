@@ -20,6 +20,7 @@ set -g theme_hostname always
 alias ls "lsd"
 alias la "lsd -A"
 alias ll "lsd -lah"
+alias lt 'du -sh * | sort -h'
 alias grep 'grep --color=auto'
 alias egrep 'egrep --color=auto'
 alias fgrep 'fgrep --color=auto'
@@ -38,6 +39,7 @@ alias gad "git diff --staged --color-words"
 alias gc "git commit"
 alias ga "git add ."
 alias gp "git push"
+alias startgit "cd (git rev-parse --show-toplevel) && git checkout main && git pull"
 alias nn "npm"
 alias y "yarn"
 alias p "pnpm"
@@ -59,7 +61,6 @@ alias header "curl -I"
 alias headerc 'curl -I --compressed'
 
 # docker
-
 alias dkrmi "docker rmi"
 alias dk "docker images"
 
