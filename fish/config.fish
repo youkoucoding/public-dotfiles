@@ -19,7 +19,8 @@ set -g theme_hostname always
 # aliases
 alias ls "lsd"
 alias la "lsd -A"
-alias ll "lsd -lah"
+alias ll "lsd -lh"
+alias lla "lsd -lah"
 alias lt 'du -sh * | sort -h'
 alias grep 'grep --color=auto'
 alias egrep 'egrep --color=auto'

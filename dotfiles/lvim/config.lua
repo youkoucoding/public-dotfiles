@@ -230,3 +230,4 @@ lvim.plugins = {
 --     require("nvim-treesitter.highlight").attach(0, "bash")
 --   end,
 -- })
+vim.opt.relativenumber = true -- set relative numbered lines
