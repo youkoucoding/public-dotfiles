@@ -217,6 +217,7 @@ lvim.plugins = {
   }
 }
 
+
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   pattern = { "*.json", "*.jsonc" },
@@ -231,3 +232,10 @@ lvim.plugins = {
 --   end,
 -- })
 vim.opt.relativenumber = true -- set relative numbered lines
+
+lvim.builtin.which_key.mappings["l"]["f"] = {
+  function()
+    require("lvim.lsp.utils").format { timeout_ms = 5000 }
+  end,
+  "Format",
+}
