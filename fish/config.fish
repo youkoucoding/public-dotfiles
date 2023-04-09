@@ -50,6 +50,11 @@ alias z zellij
 alias tf terraform 
 alias lv lvim
 
+# check ssl
+function checkssl
+  curl $argv[1] -vI --stderr - | grep "expire date"
+end
+
 alias code "code ."
 alias open "open ."
 alias vimfish "nvim $HOME/.config/fish/config.fish"
@@ -78,3 +83,5 @@ set PATH $HOME/.cargo/bin $PATH
 
 # starship
 starship init fish | source
+
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /Users/youkou/.ghcup/bin $PATH # ghcup-env
