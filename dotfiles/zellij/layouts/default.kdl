@@ -3,8 +3,11 @@ layout {
         plugin location="zellij:tab-bar"
     }
     pane split_direction="vertical" {
-        pane size="65%"
-        pane split_direction="horizontal" {
+        pane command="lvim"
+        pane split_direction="horizontal" size="30%"{
+            pane command="lsd" {
+                focus true
+            }
             pane
         }
     }
