@@ -6,7 +6,7 @@ layout {
 
         pane split_direction="vertical" {
             pane focus=true
-            pane split_direction="horizontal" size="40%"{
+            pane split_direction="horizontal" size="45%"{
                 pane
                 pane
             }
