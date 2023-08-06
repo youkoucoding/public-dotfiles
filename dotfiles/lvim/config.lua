@@ -10,8 +10,12 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save.enabled = true
-lvim.colorscheme = "kanagawa"
+lvim.format_on_save = {
+  enabled = true,
+  pattern = "*.lua",
+  timeout = 1000,
+}
+
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -21,6 +25,7 @@ lvim.leader = "space"
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
@@ -47,63 +52,32 @@ lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- Change theme settings
 -- lvim.builtin.theme.options.dim_inactive = true
 -- lvim.builtin.theme.options.style = "storm"
+lvim.colorscheme = "kanagawa"
 
--- Use which-key to add extra bindings with the leader-key prefix
+-- -- Use which-key to add extra bindings with the leader-key prefix
+-- lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without formatting" }
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
--- lvim.builtin.which_key.mappings["t"] = {
---   name = "+Trouble",
---   r = { "<cmd>Trouble lsp_references<cr>", "References" },
---   f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
---   d = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
---   q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
---   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
---   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
--- }
 
--- TODO: User Config for predefined plugins
--- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
-lvim.builtin.terminal.open_mapping = "<C-t>"
-lvim.builtin.nvimtree.setup.view.side = "left"
+lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
--- if you don't want all the parsers change this to a table of the ones you want
-lvim.builtin.treesitter.ensure_installed = {
-  "bash",
-  "c",
-  "javascript",
-  "json",
-  "lua",
-  "python",
-  "typescript",
-  "tsx",
-  "css",
-  "rust",
-  "java",
-  "yaml",
-}
 
-lvim.builtin.treesitter.ignore_install = { "haskell" }
-lvim.builtin.treesitter.highlight.enable = true
+-- Automatically install missing parsers when entering buffer
+lvim.builtin.treesitter.auto_install = true
 
--- generic LSP settings
+-- -- always installed on startup, useful for parsers without a strict filetype
+-- lvim.builtin.treesitter.ensure_installed = { "comment", "markdown_inline", "regex" }
 
--- -- make sure server will always be installed even if the server is in skipped_servers list
-lvim.lsp.installer.setup.ensure_installed = {
-  "sumneko_lua",
-  "jsonls",
-}
+-- lvim.builtin.treesitter.ignore_install = { "haskell" }
+-- lvim.builtin.treesitter.highlight.enable = true
 
--- -- change UI setting of `LspInstallInfo`
--- -- see <https://github.com/williamboman/nvim-lsp-installer#default-configuration>
--- lvim.lsp.installer.setup.ui.check_outdated_servers_on_open = false
--- lvim.lsp.installer.setup.ui.border = "rounded"
--- lvim.lsp.installer.setup.ui.keymaps = {
---     uninstall_server = "d",
---     toggle_server_expand = "o",
--- }
+-- -- generic LSP settings <https://www.lunarvim.org/docs/languages#lsp-support>
+
+-- --- disable automatic installation of servers
+-- lvim.lsp.installer.setup.automatic_installation = false
 
 -- ---@usage disable automatic installation of servers
 -- lvim.lsp.installer.setup.automatic_installation = false
@@ -176,6 +150,9 @@ lvim.plugins = {
     "rebelot/kanagawa.nvim"
   },
   {
+    "mhartington/oceanic-next"
+  },
+  {
     "marko-cerovac/material.nvim",
     config = function()
       require('material').setup({
@@ -218,12 +195,7 @@ lvim.plugins = {
 }
 
 
--- Autocommands (https://neovim.io/doc/user/autocmd.html)
--- vim.api.nvim_create_autocmd("BufEnter", {
---   pattern = { "*.json", "*.jsonc" },
---   -- enable wrap mode for json files only
---   command = "setlocal wrap",
--- })
+-- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
 -- vim.api.nvim_create_autocmd("FileType", {
 --   pattern = "zsh",
 --   callback = function()
@@ -231,6 +203,13 @@ lvim.plugins = {
 --     require("nvim-treesitter.highlight").attach(0, "bash")
 --   end,
 -- })
+
+-- vim.api.nvim_create_autocmd("BufEnter", {
+--   pattern = { "*.json", "*.jsonc" },
+--   -- enable wrap mode for json files only
+--   command = "setlocal wrap",
+-- })
+
 vim.opt.relativenumber = true -- set relative numbered lines
 
 lvim.builtin.which_key.mappings["l"]["f"] = {
