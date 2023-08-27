@@ -3,7 +3,7 @@ format = '$all$directory$character'
 [azure]
 disabled = false
 format = "on [$symbol($subscription)]($style) "
-symbol = "ﴃ "
+symbol = "󰠅 "
 style = "blue bold"
 
 [[battery.display]]
