@@ -13,9 +13,7 @@ config.font = wezterm.font('Dank Mono', { weight = 'Medium' })
 config.font_size = 14
 
 -- Colors
--- config.color_scheme = 'Gruvbox dark, pale (base16)'
--- config.color_scheme = 'tokyonight_night'
-config.color_scheme = 'Apprentice (Gogh)'
+config.color_scheme = 'Belge (terminal.sexy)'
 
 -- Window
 config.window_padding = { left = 10, right = 10, top = 10, bottom = 10 }
