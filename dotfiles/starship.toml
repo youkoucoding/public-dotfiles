@@ -24,7 +24,7 @@ tag_symbol = "🔖 "
 
 [git_branch]
 symbol = "🌱 "
-truncation_length = 24
+truncation_length = 32
 truncation_symbol = "..."
 
 [git_state]

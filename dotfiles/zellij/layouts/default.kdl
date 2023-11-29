@@ -21,7 +21,6 @@ layout {
         }
         pane split_direction="Vertical" {
             pane size="15%" {
-                // TODO: when we support sending CWD to plugins, this should start in ./zellij-derver
                 plugin location="zellij:strider"
             }
             children
@@ -30,46 +29,47 @@ layout {
             plugin location="zellij:status-bar"
         }
     }
-    strider_tab name="Server (root)" cwd="$HOME/workspace/" focus=true {
-        tests_under_files split_direction="vertical" {
-            pane
-            pane
-        }
+//    strider_tab name="Server (root)" cwd="$HOME/workspace/" focus=true {
+//        tests_under_files split_direction="vertical" {
+//            pane
+//            pane
+//        }
+//    }
+    tab name="Remote & Local" split_direction="vertical" cwd="~/workspace" {
+        // pane edit="./pty.rs" name="PTY"
+        // pane edit="./os_input_output.rs" name="OS_INPUT_OUTPUT"
+        pane name="VMs"
+        pane name="local_machine"
     }
-    tab name="Client (root)" cwd="./zellij-client" {
-        tests_under_files split_direction="vertical" {
-            pane edit="./src/lib.rs"
-            pane edit="./src/input_handler.rs"
-        }
-    }
-    tab name="Server (screen thread)" split_direction="vertical" cwd="./zellij-server/src" {
-        pane edit="./screen.rs" name="SCREEN"
-        pane edit="./tab/mod.rs" name="TAB"
-        pane edit="./panes/terminal_pane.rs" name="TERMINAL PANE"
-    }
-    tab name="Server (pty thread)" split_direction="vertical" cwd="./zellij-server/src" {
-        pane edit="./pty.rs" name="PTY"
-        pane edit="./os_input_output.rs" name="OS_INPUT_OUTPUT"
-    }
-    tab name="Server (pane grids)" split_direction="horizontal" cwd="./zellij-server/src/panes" {
+//    tab name="DevOps" cwd="$HOME/workspace/3-devops" {
+//        tests_under_files split_direction="vertical" {
+//            // pane edit="./src/lib.rs"
+//            // pane edit="./src/input_handler.rs"
+//            pane 
+//            pane 
+//        }
+//    }
+    tab name="Products" split_direction="horizontal" cwd="~/workspace" {
         pane split_direction="vertical" {
-            pane edit="./tiled_panes/mod.rs" name="TILED PANES"
-            pane edit="./tiled_panes/tiled_pane_grid.rs" name="TILED PANES - GRID"
-            pane edit="./tiled_panes/pane_resizer.rs" name="TILED PANES - GRID - RESIZER"
+            pane name="Product Zero" cwd="core"
+            pane name="Product One" cwd="1-talent"
         }
         pane split_direction="vertical" {
-            pane edit="./floating_panes/mod.rs" name="FLOATING_PANES"
-            pane edit="./floating_panes/floating_pane_grid.rs" name="FLOATING_PANES - GRID"
+            pane name="Product Two" cwd="2-kintai"
+            pane name="Product Three" cwd="4-romu"
+            pane name="Product Four" cwd="7-kyuyo"
         }
     }
-    tab name="Server (Terminal)" split_direction="horizontal" cwd="./zellij-server/src/panes" {
+    tab name="DevOps" split_direction="horizontal" cwd="~/workspace" {
         pane split_direction="vertical" {
-            pane edit="./terminal_pane.rs" name="TERMINAL PANE"
-            pane edit="./grid.rs" name="GRID (ANSI PARSER)"
+            pane name="Pane One"
+            pane name="Pane Two"
         }
         pane split_direction="vertical" {
-            pane edit="./terminal_character.rs" name="TERMINAL CHARACTER"
-            pane edit="./sixel.rs" name="SIXEL"
+            // pane edit="./terminal_character.rs" name="TERMINAL CHARACTER"
+            // pane edit="./sixel.rs" name="SIXEL"
+            pane name="Pane Three"
+            pane name="Pane Four"
         }
     }
 }

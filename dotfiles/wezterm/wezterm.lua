@@ -9,8 +9,10 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
-config.font = wezterm.font('Dank Mono', { weight = 'Medium' })
-config.font_size = 14
+config.font = wezterm.font('Monaspace Neon', { weight = 'Medium' })
+-- config.font = wezterm.font('Dank Mono', { weight = 'Bold' })
+config.font_size = 12
+config.harfbuzz_features = { 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss06', 'calt' }
 
 -- Colors
 config.color_scheme = 'Belge (terminal.sexy)'
@@ -34,6 +36,7 @@ config.window_padding = {
   top = 0,
   bottom = 0,
 }
+
 
 config.initial_cols = 128
 config.initial_rows = 90
